@@ -5,7 +5,7 @@ use 5.00800;
 use base qw/Exporter/;
 use Test::More;
 use Digest::MD5 ();
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 our @EXPORT = qw/test_dbic_schema_loader_digest/;
 
 our $MARK_RE = qr{^(# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:)([A-Za-z0-9/+]{22})\n};
@@ -35,6 +35,8 @@ sub test_dbic_schema_loader_digest {
 1;
 __END__
 
+=for stopwords AAAAHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+
 =encoding utf8
 
 =head1 NAME
@@ -57,6 +59,21 @@ But, some programmer MODIFY THE ABOVE OF
 THIS CODE!!!!!!!!!! AAAAHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH!!!
 
 This module tests this module.If you use this module, you can stop this problem.
+
+=head1 METHODS
+
+=head2 test_dbic_schema_loader_digest('lib/Proj/Schema/Foo.pm')
+
+check the MD5 sum.
+
+=head1 CODE COVERAGE
+
+    ---------------------------- ------ ------ ------ ------ ------ ------ ------
+    File                           stmt   bran   cond    sub    pod   time  total
+    ---------------------------- ------ ------ ------ ------ ------ ------ ------
+    ...DBICSchemaLoaderDigest.pm  100.0  100.0    n/a  100.0  100.0  100.0  100.0
+    Total                         100.0  100.0    n/a  100.0  100.0  100.0  100.0
+    ---------------------------- ------ ------ ------ ------ ------ ------ ------
 
 =head1 AUTHOR
 

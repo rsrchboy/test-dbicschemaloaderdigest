@@ -23,3 +23,6 @@ META.yml
 README
 t/00_compile.t
 t/01_simple.t
+t/02_fail.t
+t/03_file_not_found.t
+t/04_missing_md5.t

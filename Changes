@@ -1,4 +1,10 @@
 Revision history for Perl extension Test::DBICSchemaLoaderDigest
 
+0.02
+
+    - (NO FEATURE CHANGES)
+    - added more docs
+    - added more tests.
+
 0.01    Fri Feb  8 20:45:17 2008
         - original version

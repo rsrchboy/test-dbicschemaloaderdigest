@@ -20,4 +20,4 @@ requires:
   Exporter: 5.58
   Test::More: 0.74
   perl: 5.8.0
-version: 0.01
+version: 0.02
