@@ -1,5 +1,9 @@
 Revision history for Perl extension Test::DBICSchemaLoaderDigest
 
+{{$NEXT}}
+	- no code changes!
+	- move to Dist::Zilla to address some packaging issues
+
 0.02
 
     - (NO FEATURE CHANGES)
