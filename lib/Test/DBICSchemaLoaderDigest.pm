@@ -5,7 +5,6 @@ use 5.00800;
 use base qw/Exporter/;
 use Test::More;
 use Digest::MD5 ();
-our $VERSION = '0.03';
 our @EXPORT = qw/test_dbic_schema_loader_digest/;
 
 our $MARK_RE = qr{^(# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:)([A-Za-z0-9/+]{22})\n};
@@ -32,16 +31,14 @@ sub test_dbic_schema_loader_digest {
     ok undef, "md5sum not found: $fname";
 }
 
+# ABSTRACT: test the DBIC::Schema::Loader's MD5 sum
+
 1;
 __END__
 
 =for stopwords AAAAHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
 
 =encoding utf8
-
-=head1 NAME
-
-Test::DBICSchemaLoaderDigest - test the DBIC::Schema::Loader's MD5 sum
 
 =head1 SYNOPSIS
 
@@ -75,20 +72,8 @@ check the MD5 sum.
     Total                         100.0  100.0    n/a  100.0  100.0  100.0  100.0
     ---------------------------- ------ ------ ------ ------ ------ ------ ------
 
-=head1 AUTHOR
-
-Tokuhiro Matsuno E<lt>tokuhirom@gmail.comE<gt>
-
-This package is currently maintained by Chris Weyl
-E<lt>cweyl@alumni.drew.eduE<gt>; so bug him and not Tokuhiro :)
-
 =head1 SEE ALSO
 
 L<DBIx::Class::Schema::Loader>
-
-=head1 LICENSE
-
-This library is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself.
 
 =cut
