@@ -55,13 +55,14 @@ Hey DBIC::Schema::Loader dumps follow code:
 But, some programmer MODIFY THE ABOVE OF
 THIS CODE!!!!!!!!!! AAAAHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH!!!
 
-This module tests this module.If you use this module, you can stop this problem.
+This module tests for manual changes to the forbidden zone. If you use this
+test, you can stop this problem before it becomes a real problem.
 
 =head1 METHODS
 
 =head2 test_dbic_schema_loader_digest('lib/Proj/Schema/Foo.pm')
 
-check the MD5 sum.
+Check the MD5 sum.
 
 =head1 CODE COVERAGE
 
